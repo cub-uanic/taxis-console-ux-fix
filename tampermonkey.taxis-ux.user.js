@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TaxisConsole
 // @namespace    https://github.com/cub-uanic/taxis-console-ux-fix
-// @version      0.2
+// @version      0.3
 // @description  improve UX
 // @author       Oleg Kostyuk <cub.uanic@gmail.com>
 // @match        http://taxis.agora.odesk.com/*
@@ -19,7 +19,7 @@
         if (!head) { return; }
         style = document.createElement('style');
         style.type = 'text/css';
-        style.innerHTML = '.panel-default>.panel-heading {background-color:#ccc !important}';
+        style.innerHTML = '.panel-default>.panel-heading {background-color:#ccc !important}; panel-collapse>.panel-heading {background-color:#eeffff !important};';
         head.appendChild(style);
     }
 
